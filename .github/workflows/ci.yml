@@ -1,6 +1,15 @@
 name: panvimdoc
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - master
+
+  pull_request:
+    branches:
+      - main
+      - master
 
 jobs:
   docs:
@@ -12,8 +21,8 @@ jobs:
         uses: kdheepak/panvimdoc@main
         with:
           vimdoc: lspsystem.nvim
-          pandoc: "README.md"
-          version: "NVIM v0.10.0"
+          pandoc: README.md
+          version: Nvim 0.8.0
           treesitter: true
           toc: true
       - uses: stefanzweifel/git-auto-commit-action@v4
