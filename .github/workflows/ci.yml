@@ -12,6 +12,10 @@ jobs:
         uses: kdheepak/panvimdoc@main
         with:
           vimdoc: lspsystem.nvim
+          pandoc: "README.md"
+          version: "NVIM v0.10.0"
+          treesitter: true
+          toc: true
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Auto generate docs"
