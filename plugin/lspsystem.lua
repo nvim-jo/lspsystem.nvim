@@ -1,7 +1,3 @@
-if vim.g.lspsaga_version then
-  return
-end
-
 vim.g.lspsystem_version = '0.0.6'
 
 vim.api.nvim_create_user_command('Lspsystem', function(args)
