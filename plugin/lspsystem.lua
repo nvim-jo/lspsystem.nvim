@@ -2,7 +2,7 @@ if vim.g.lspsaga_version then
   return
 end
 
-vim.g.lspsystem_version = '0.0.3'
+vim.g.lspsystem_version = '0.0.4'
 
 vim.api.nvim_create_user_command('Lspsystem', function(args)
   require('lspsystem.command').load_command(args.fargs[1], args.fargs[2])
