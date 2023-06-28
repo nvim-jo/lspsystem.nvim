@@ -1,26 +1,18 @@
-name: ci
+name: panvimdoc
 
-on:
-  push:
-    branches:
-      - main
-
-  pull_request:
-    branches:
-      - main
+on: [push]
 
 jobs:
   docs:
     runs-on: ubuntu-latest
     name: pandoc to vimdoc
-    if: ${{ github.ref == 'refs/heads/main' }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
       - name: panvimdoc
         uses: kdheepak/panvimdoc@main
         with:
           vimdoc: lspsystem.nvim
-          version: Nvim 0.10.0
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'chore(doc): auto generate docs'
+          commit_message: "Auto generate docs"
+          branch: ${{ github.head_ref }}
