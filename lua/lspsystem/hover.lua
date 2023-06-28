@@ -118,7 +118,7 @@ function hover:open_floating_preview(res, option_fn)
 
   if fn.has('nvim-0.9') == 1 and config.ui.title then
     float_option.title = {
-      { config.ui.hover, 'Exception' },
+      { '  '..config.ui.hover, 'Exception' },
       { ' Docs  ', 'TitleString' },
     }
   end
