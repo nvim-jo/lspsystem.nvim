@@ -657,10 +657,10 @@ Default UI options
 
 All highlight groups can be found in [highlight.lua](./lua/lspsystem/highlight.lua).
 
-`require('lspsystem.lspkind').get_kind_group()` will return all the SagaWinbar + kind name group . also
-include `SagaWinbarFileName SagaWinbarFileIcon SagaWinbarFolderName SagaWinbarSep`. These groups are
+`require('lspsystem.lspkind').get_kind_group()` will return all the SystemWinbar + kind name group . also
+include `SystemWinbarFileName SystemWinbarFileIcon SystemWinbarFolderName SystemWinbarSep`. These groups are
 special. so if you want use this api to custom the highlight. you need dealwith these 4 groups the
-last item is `SagaWinbarSep`.
+last item is `SystemWinbarSep`.
 
 # Custom Kind
 

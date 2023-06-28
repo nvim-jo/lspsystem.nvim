@@ -48,8 +48,7 @@ Neovim lsp enhance plugin.
 3. |lspsystem.nvim-using-lspsystem|
 4. |lspsystem.nvim-customizing-lspsystem’s-appearance|
 5. |lspsystem.nvim-backers|
-6. |lspsystem.nvim-donate|
-7. |lspsystem.nvim-license|
+6. |lspsystem.nvim-license|
 
 
 INSTALL                                                 *lspsystem.nvim-install*
